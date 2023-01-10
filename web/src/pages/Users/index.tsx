@@ -6,21 +6,19 @@ import Footer from "../../components/Footer";
 
 export default function Users() {
   return (
-    <>
+    <HomeContainer>
       <Header />
-      <HomeContainer>
-        <Main>
-          <Title>Pessoa Usuária</Title>
-          <Paragraph>
-            A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais
-            de qualidade e que atendam às suas necessidades de forma segura e acolhedora.
-          </Paragraph>
-        </Main>
-        <div>
-          <img src={UsersIcon} alt="Pessoas usando celular" />
-        </div>
-      </HomeContainer>
+      <Main>
+        <Title>Pessoa Usuária</Title>
+        <Paragraph>
+          A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais
+          de qualidade e que atendam às suas necessidades de forma segura e acolhedora.
+        </Paragraph>
+      </Main>
+      <div>
+        <img src={UsersIcon} alt="Pessoas usando celular" />
+      </div>
       <Footer />
-    </>
+    </HomeContainer>
   );
 }

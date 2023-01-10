@@ -2,18 +2,38 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  padding-left: 6.4rem;
-  padding-right: 6.4rem;
-  nav {
+  flex-direction: column;
+  align-items: center;
+
+  section {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    width: 100%;
-  }
-  a {
-    width: 100%;
+    width: 90%;
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 2rem;
+        a {
+          width: 100%;
+        }
+      }
+    }
+
+    div {
+      img {
+        width: 35rem;
+        height: 35rem;
+      }
+    }
   }
 `;
 
@@ -22,7 +42,7 @@ export const Main = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  width: 40%;
+  width: 100%;
 
   p {
     padding-top: 3.2rem;

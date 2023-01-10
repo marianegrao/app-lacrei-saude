@@ -1,4 +1,4 @@
-import { FooterContainer } from "./style";
+import { Divisor, FooterContainer, NavViewsPage, FooterSpan } from "./style";
 import { useLocation, Link } from "react-router-dom";
 import NavSocialMedia from "../NavSocialMedia";
 
@@ -12,25 +12,27 @@ export default function Footer() {
   const location = useLocation();
   return (
     <FooterContainer>
-      <div></div>
+      <Divisor></Divisor>
 
-      <nav>
-        {links.map((link) => (
-          <Link
-            key={link.to}
-            to={link.to}
-            style={location.pathname === link.to ? { fontWeight: "bold" } : {}}
-          >
-            {link.label}
-          </Link>
-        ))}
-      </nav>
+      <NavViewsPage>
+        <nav>
+          {links.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              style={location.pathname === link.to ? { fontWeight: "bold" } : {}}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      </NavViewsPage>
 
       <NavSocialMedia />
 
-      <span>Desafio Front-end Lacrei</span>
+      <FooterSpan>
+        <span>Desafio Front-end Lacrei</span>
+      </FooterSpan>
     </FooterContainer>
   );
 }
-
-// <InstagramLogo size={32} weight="light" />
