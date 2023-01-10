@@ -1,26 +1,25 @@
 import Header from "../../components/Header";
 import ProfessionalIcon from "../../assets/profissional-icon.svg";
-import { HomeContainer, Main } from "./style";
-import { Paragraph, Title } from "../../styles/GlobalComponentsStyles/components";
+import { Divisor } from "./style";
+import { Container, Paragraph, Title } from "../../styles/GenericComponentsStyles/components";
 import Footer from "../../components/Footer";
 
 export default function Professional() {
   return (
-    <>
+    <Container>
       <Header />
-      <HomeContainer>
-        <Main>
+      <main>
+        <section>
           <Title>Profissional</Title>
+          <Divisor></Divisor>
           <Paragraph>
-            A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais
-            de qualidade e que atendam às suas necessidades de forma segura e acolhedora.
+            Buscamos recrutar pessoas profissionais da saúde que entendam as necessidades e se
+            comprometam com o bem-estar da comunidade LGBTQIAPN+
           </Paragraph>
-        </Main>
-        <div>
-          <img src={ProfessionalIcon} alt="Profissionais da saúde" />
-        </div>
-      </HomeContainer>
+        </section>
+        <img src={ProfessionalIcon} alt="Profissionais da saúde" />
+      </main>
       <Footer />
-    </>
+    </Container>
   );
 }

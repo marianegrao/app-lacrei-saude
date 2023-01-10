@@ -12,6 +12,7 @@ export const FooterContainer = styled.footer`
 
   @media screen and (min-width: 600px) {
     justify-content: space-between;
+    gap: 2rem;
   }
 `;
 
@@ -22,6 +23,9 @@ export const Divisor = styled.div`
   border-top: 0.1rem solid ${THEME.COLORS.SECONDARY};
   margin-top: 3.5rem;
   margin-bottom: 1rem;
+  @media screen and (min-width: 600px) {
+    margin-top: 2.2rem;
+  }
 `;
 
 export const NavViewsPage = styled.div`

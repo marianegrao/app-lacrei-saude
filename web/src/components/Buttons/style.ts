@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { THEME } from "../../styles/theme";
 
 export const ButtonFilled = styled.button`
-  width: 70%;
-  padding: 1rem 0rem;
+  width: 60%;
+  padding: 1.2rem 0rem;
 
   outline: 0;
   border: 0;
@@ -24,8 +24,8 @@ export const ButtonFilled = styled.button`
 `;
 
 export const ButtonUnfilled = styled.button`
-  width: 70%;
-  padding: 1rem 0rem;
+  width: 60%;
+  padding: 1.2rem 0rem;
   border: 0;
   outline: 0.2rem solid ${THEME.COLORS.PRIMARY};
 

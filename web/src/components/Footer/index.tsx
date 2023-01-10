@@ -13,7 +13,6 @@ export default function Footer() {
   return (
     <FooterContainer>
       <Divisor></Divisor>
-
       <NavViewsPage>
         <nav>
           {links.map((link) => (
@@ -27,9 +26,7 @@ export default function Footer() {
           ))}
         </nav>
       </NavViewsPage>
-
       <NavSocialMedia />
-
       <FooterSpan>
         <span>Desafio Front-end Lacrei</span>
       </FooterSpan>

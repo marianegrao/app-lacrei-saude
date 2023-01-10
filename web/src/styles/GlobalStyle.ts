@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     body{
         font-size: ${THEME.FONT_SIZE.TEXT_BASE}rem;
-        font-family: ${THEME.FONT_FAMILY.NUNITO};
+        font-family: ${THEME.FONT_FAMILY.NUNITO}, sans-serif;
         background: ${THEME.COLORS.BACKGROUND};
     }
 `;

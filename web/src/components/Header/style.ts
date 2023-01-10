@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
   width: 100vw;
 
   padding: 1rem 0rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
 
   background-color: ${THEME.COLORS.HEADER};
 
@@ -36,6 +36,7 @@ export const HeaderContainer = styled.header`
   @media screen and (min-width: 600px) {
     flex-direction: row;
     padding: 0.8rem 6.4rem;
+    margin-bottom: 5rem;
     nav {
       gap: 4rem;
     }
