@@ -1,17 +1,22 @@
 import { InstagramLogo, FacebookLogo, LinkedinLogo } from "phosphor-react";
+import { socialMedias } from "../../../../data/navigations";
 import { ContainerSocialMediaNavigation } from "./style";
 
 export default function NavSocialMedia() {
-  const socialMedias = [
-    { link: "https://www.instagram.com/lacrei.saude/", component: <InstagramLogo /> },
-    { link: "https://www.facebook.com/lacrei.saude", component: <FacebookLogo /> },
-    { link: "https://www.linkedin.com/company/lacrei/", component: <LinkedinLogo /> },
-  ];
+  function verifyIfLinkIncludesLogosComponents(link: string) {
+    if (link.includes("instagram")) {
+      return <InstagramLogo />;
+    } else if (link.includes("facebook")) {
+      return <FacebookLogo />;
+    } else {
+      return <LinkedinLogo />;
+    }
+  }
   return (
     <ContainerSocialMediaNavigation>
       {socialMedias.map((socialMedia) => (
         <a key={socialMedia.link} href={socialMedia.link}>
-          {socialMedia.component}
+          {verifyIfLinkIncludesLogosComponents(socialMedia.link)}
         </a>
       ))}
     </ContainerSocialMediaNavigation>

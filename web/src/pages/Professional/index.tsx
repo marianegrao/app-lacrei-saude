@@ -1,7 +1,11 @@
 import Header from "../../components/Header";
 import ProfessionalIcon from "../../assets/profissional-icon.svg";
-import { Divisor } from "./style";
-import { Container, Paragraph, Title } from "../../styles/GenericComponentsStyles/components";
+import {
+  Container,
+  Paragraph,
+  Title,
+  ParagraphContainer,
+} from "../../styles/GenericComponentsStyles/components";
 import Footer from "../../components/Footer";
 
 export default function Professional() {
@@ -11,11 +15,12 @@ export default function Professional() {
       <main>
         <section>
           <Title>Profissional</Title>
-          <Divisor></Divisor>
-          <Paragraph>
-            Buscamos recrutar pessoas profissionais da saúde que entendam as necessidades e se
-            comprometam com o bem-estar da comunidade LGBTQIAPN+
-          </Paragraph>
+          <ParagraphContainer>
+            <Paragraph>
+              Buscamos recrutar pessoas profissionais da saúde que entendam as necessidades e se
+              comprometam com o bem-estar da comunidade LGBTQIAPN+
+            </Paragraph>
+          </ParagraphContainer>
         </section>
         <img src={ProfessionalIcon} alt="Profissionais da saúde" />
       </main>

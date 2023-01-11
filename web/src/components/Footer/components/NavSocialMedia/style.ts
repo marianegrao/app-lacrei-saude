@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { THEME } from "../../styles/theme";
+import { THEME } from "../../../../styles/theme";
 
 export const ContainerSocialMediaNavigation = styled.nav`
   display: flex;

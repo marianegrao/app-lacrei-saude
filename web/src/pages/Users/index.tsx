@@ -1,8 +1,12 @@
-import Header from "../../components/Header";
 import UsersIcon from "../../assets/pessoa-usuaria-icon.svg";
-import { HomeContainer, Main } from "./style";
-import { Container, Paragraph, Title } from "../../styles/GenericComponentsStyles/components";
+import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import {
+  Container,
+  Paragraph,
+  Title,
+  ParagraphContainer,
+} from "../../styles/GenericComponentsStyles/components";
 
 export default function Users() {
   return (
@@ -11,10 +15,13 @@ export default function Users() {
       <main>
         <section>
           <Title>Pessoa Usuária</Title>
-          <Paragraph>
-            A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais
-            de qualidade e que atendam às suas necessidades de forma segura e acolhedora.
-          </Paragraph>
+          <ParagraphContainer>
+            <Paragraph>
+              A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por
+              profissionais de qualidade e que atendam às suas necessidades de forma segura e
+              acolhedora.
+            </Paragraph>
+          </ParagraphContainer>
         </section>
         <img src={UsersIcon} alt="Pessoas usando celular" />
       </main>
