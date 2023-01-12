@@ -14,8 +14,7 @@ export const ContainerSocialMediaNavigation = styled.nav`
     }
   }
 
-  svg {
-    color: ${THEME.COLORS.PRIMARY};
+  img {
     width: 32px;
     height: 32px;
     :hover {
